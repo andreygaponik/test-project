@@ -2,6 +2,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+	margin: 0;
+}
+
 p, a {
 	font-size: 15px;
 	color: $color;
@@ -13,4 +17,97 @@ p, a {
 
 .right {
 	float: right
+}
+
+.show {
+	display: block;
+}
+
+.no-border {
+	background: none !important;
+}
+
+.nav {
+	& > li {
+		& > a {
+			padding: 15px 25px;
+
+			@media all and (max-width: 1200px) {
+				& {
+					padding: 15px;
+				}
+			}
+		}
+	}
+}
+
+.navbar-collapse {
+	padding: 0;
+}
+
+.navbar-default {
+	background: #fff;
+	border: none;
+	float: left;
+	margin-bottom: 0;
+
+	.navbar-nav {
+		& > li {
+			background: url(../images/nav-line.png) 100% 50% no-repeat;
+			a {
+				color: $color;
+			}
+			& > a:hover {
+				background: $green;
+				color: #fff;	
+			}
+		}
+		li:last-child {
+			background-image: none;
+		}
+		.dropdown-menu {
+			padding: 0;
+			border: 1px solid #e8e8e8;
+			border-top: 2px solid $green;
+			box-shadow: 0 9px 51px rgba(53,67,67,.10);
+
+			li {
+				& a {
+					padding: 10px 20px;
+					@media all and (max-width: 767px) {
+						& {
+							padding: 15px 5px;
+						}
+					}
+				}
+				& > a:hover {
+					background: #f7f7f7;
+					color: $color;	
+				}
+			}
+		}
+		@media all and (max-width: 767px) {
+			& {
+				margin: 0;
+			}
+		}
+	}
+	.navbar-nav {
+		& > .active {
+			& > a,
+			& > a:focus,
+			& > a:hover {
+				background: $green;
+				color: #fff;	
+			}
+		}
+		& > .open {
+			& > a,
+			& > a:focus,
+			& > a:hover {
+				background: $green;
+				color: #fff;	
+			}
+		}
+	}
 }

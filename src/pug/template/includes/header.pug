@@ -8,3 +8,34 @@ header.header
 				p.header-phones
 					b  +7 (812) 313-00-90
 				a(href="#").link-write Написать нам
+	div.container
+		nav.navbar.navbar-default
+			div.navbar-header
+				button(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false").navbar-toggle.collapsed
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+			div.collapse.navbar-collapse#bs-example-navbar-collapse-1
+				ul.nav.navbar-nav
+					li.active
+						a(href="#") О МАРКЕ
+					li
+						a(href="#") АКАДЕМИЯ
+					li.dropdown
+						a(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false").dropdown-toggle НАША ПРОДУКЦИЯ
+						ul.dropdown-menu
+							li
+								a(href="#") Профессиональная серия
+							li
+								a(href="#") Домашняя серия
+					li
+						a(href="#") АКЦИИ
+					li
+						a(href="#") ГДЕ КУПИТЬ
+					li
+						a(href="#") СОТРУДНИЧЕСТВО
+					li
+						a(href="#") КОНТАКТЫ
+		form(action="").form__search
+			input(type="text").form__search-input
+			a(href="").form__search-btn
