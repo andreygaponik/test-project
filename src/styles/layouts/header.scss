@@ -1,0 +1,48 @@
+.header {
+  padding: 15px 0;
+  
+  &__top {
+    h1 {
+      display: inline-block;
+    }
+    .logo {
+      text-indent: -10000px;
+      display: block;
+      width: 435px;
+      height: 60px;
+      background: url(../images/logo.png) 0 0 no-repeat;
+      background-size: cover;
+      margin-top: 7px;
+    }
+    .custom-link {
+      padding-left: 27px;
+      margin-left: -27px;
+      background: url(../images/icon1.png) 0 50% no-repeat;
+      margin-bottom: 10px;
+      display: block;
+      &:hover {
+        text-decoration: none;
+        opacity: .8;
+        color: $color;
+      }
+    }
+    .header__contacts {
+      text-align: right;
+
+      p {
+        margin-bottom: 0;
+      }
+      .link-write {
+        font-size: 14px;
+        border-bottom: 1px dotted $color;
+        &:hover {
+          text-decoration: none;
+          color: $color;
+          opacity: .8;
+        }
+      }
+    }
+  }
+  
+}
+
