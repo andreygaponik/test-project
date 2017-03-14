@@ -12,7 +12,17 @@ $(function() {
 		items: 1,
 		loop: true,
 		touchDrag: false,
-		autoplay: false,
+		mouseDrag: false,
+		autoplay: true,
 		autoplayTimeout: 7500
 	});
+
+	function alignSlideDescription() {
+		$.each($('.owl-carousel .owl-item'), function() {
+			var heightDescription = $(this).find('.owl-carousel__description').height();
+			$(this).find('.owl-carousel__description').css('marginTop', -heightDescription/2);
+		});
+	}
+
+	// alignSlideDescription();
 });
