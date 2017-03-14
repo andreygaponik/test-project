@@ -65,8 +65,9 @@ p, a {
 	}
 	.owl-nav.disabled {
 		& + .owl-dots {
-			margin-top: -35px;
+			top: -35px;
 			position: relative;
+			margin-top: 0;
 		}
 	}
 }
