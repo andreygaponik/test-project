@@ -31,123 +31,31 @@ p, a {
 	background: none !important;
 }
 
-.nav {
-	& > li {
-		& > a {
-			padding: 15px 25px;
+fieldset {
+	border: 1px solid #e8e8e8;
+	padding: 20px 130px 20px 30px;
+	position: relative;
 
-			@media all and (max-width: 1200px) {
-				& {
-					padding: 15px;
-				}
-			}
-			@media all and (max-width: 992px) {
-				& {
-					padding: 15px 5px;
-				}
-			}
-		}
-	}
-}
+	legend {
+		border: none;
+		width: auto;
+		font-size: 24px;
+		margin: 0;
+		padding: 0 10px;
+		font-weight: 500;
 
-.owl-theme {
-	.owl-dots {
-		.owl-dot.active {
-			span {
-				background: #72b13a;
-			}
-		}
-		.owl-dot:hover {
-			span {
-				background: #72b13a;
-			}
-		}
-	}
-	.owl-nav.disabled {
-		& + .owl-dots {
-			top: -35px;
-			position: relative;
-			margin-top: 0;
-		}
-	}
-}
-
-
-.navbar-collapse {
-	padding: 0;
-}
-
-.navbar-default {
-	background: #fff;
-	border: none;
-	float: left;
-	margin-bottom: 0;
-
-	@media all and (max-width: 767px) {
-		& {
-			float: right;
-			margin-left: 25px;
-		}
-	}
-
-	.navbar-nav {
-		& > li {
-			background: url(../images/nav-line.png) 100% 50% no-repeat;
-			a {
-				color: $color;
-			}
-			& > a:hover {
-				background: $green;
-				color: #fff;	
-			}
-		}
-		li:last-child {
-			background-image: none;
-		}
-		.dropdown-menu {
-			padding: 0;
-			border: 1px solid #e8e8e8;
-			border-top: 2px solid $green;
-			box-shadow: 0 9px 51px rgba(53,67,67,.10);
-
-			li {
-				& a {
-					padding: 10px 20px;
-					font-weight: 300;
-					@media all and (max-width: 767px) {
-						& {
-							padding: 15px 5px;
-						}
-					}
-				}
-				& > a:hover {
-					background: #f7f7f7;
-					color: $color;	
-				}
-			}
-		}
-		@media all and (max-width: 767px) {
+		@media all and (max-width: 505px) {
 			& {
-				margin: 0;
+				font-size: 22px;
 			}
 		}
 	}
-	.navbar-nav {
-		& > .active {
-			& > a,
-			& > a:focus,
-			& > a:hover {
-				background: $green;
-				color: #fff;	
-			}
-		}
-		& > .open {
-			& > a,
-			& > a:focus,
-			& > a:hover {
-				background: $green;
-				color: #fff;	
-			}
-		}
+
+	.custom-img {
+		position: absolute;
+		right: 40px;
+		bottom: 0;
+		z-index: 9;
 	}
 }
+

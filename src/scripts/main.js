@@ -19,10 +19,16 @@ $(function() {
 
 	function alignSlideDescription() {
 		$.each($('.owl-carousel .owl-item'), function() {
+			var img = $(this).find('img');
+			var src = img.attr('src');
 			var heightDescription = $(this).find('.owl-carousel__description').height();
+			
 			$(this).find('.owl-carousel__description').css('marginTop', -heightDescription/2);
+			
+			img.css('display','none');
+			$(this).css('backgroundImage', 'url('+src+')');
 		});
 	}
 
-	// alignSlideDescription();
+	alignSlideDescription();
 });
